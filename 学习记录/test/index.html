@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+    <div id="components-demo">
+        desa
+        <mycomponent title="My journey with Vue">de</mycomponent>
+        <mycomponent title="Blogging with Vue"></mycomponent>
+        <mycomponent title="Why Vue is so fun"></mycomponent>
+
+        <mycomponent1 title="different"></mycomponent1>
+    </div>
+    
+</body>
+<script src="../../js/vue.js"></script>
+<script src="./test.js"></script>
+<script>
+Vue.component('mycomponent',{
+  props:['title'],
+  template:'<h3>{{title}}</h3>'
+})
+Vue.component('mycomponent1',{
+  props:['title'],
+  template:'<h3>{{title}}</h3>'
+})
+new Vue({ el: '#components-demo' })
+</script>
+</html>
