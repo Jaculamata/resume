@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #img-div{
+        background: white;
+        display:grid;
+        width:100%;
+        min-height: 300px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+        "header test"
+        "best best";
+        
+    }
+    #image1{
+        background: red;
+        grid-area: header;
+        /* height:50%; */
+        /* background-size:100% 100%;
+        background-attachment: fixed; */
+    }
+    #image2{
+        background: blue;
+        grid-area: test;
+        /* height:50%; */
+    }
+</style>
+<body>
+    <main id = "main">
+        <header id = "title">
+            My first Web
+        </header>
+        <div id = "img-div">
+            <img id = "image1" src="./pic/吃瓜.PNG" >
+            <img id = "image2" src="./pic/狗.PNG">
+            <img id = "image3" src="./pic/吃瓜.PNG" >
+            <img id = "image4" src="./pic/狗.PNG" >
+        </div>
+        <div id = "img-caption">My Favorite Food</div>
+        <div id = "tribute=-info"> Show my first page</div>
+        <a target="_blank" href="">My Github Page</a>
+    </main>
+</body>
+</html>
